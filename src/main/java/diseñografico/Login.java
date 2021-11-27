@@ -209,7 +209,7 @@ public class Login extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-// Metodo para abrir la ventana de registrarse
+// Metodo para abrir la ventana de registrarse////////////////////////////////////////////////////////
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
 
@@ -288,7 +288,7 @@ public class Login extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jButton1ActionPerformed
-
+/////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * @param args the command line arguments
      */

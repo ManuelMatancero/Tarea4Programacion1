@@ -261,7 +261,7 @@ public class Registro extends javax.swing.JFrame {
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jPasswordField1ActionPerformed
-//Metodo que se ejecuta al dar clic en el boton registrarse
+//Metodo que se ejecuta al dar clic en el boton registrarse//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //si el evento cocurrio en el jButton1 se ejecuta lo que hay en el if
@@ -340,7 +340,7 @@ public class Registro extends javax.swing.JFrame {
 
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * @param args the command line arguments
      */

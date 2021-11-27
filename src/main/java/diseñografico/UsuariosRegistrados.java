@@ -331,7 +331,7 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-// Boton para cerrar Sesion
+// Boton para cerrar Sesion//////////////////////////////////////////////////////////////////////////////////////////
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         if (evt.getSource() == jButton3) {
@@ -476,7 +476,7 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
             jButton5.setEnabled(false);
         }
     }//GEN-LAST:event_jButton5ActionPerformed
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * @param args the command line arguments
      */

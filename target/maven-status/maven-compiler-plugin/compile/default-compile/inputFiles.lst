@@ -1,6 +1,7 @@
 D:\JAVAITLA\Tarea4Pro1\src\main\java\datos\UsuarioDAO.java
-D:\JAVAITLA\Tarea4Pro1\src\main\java\test\ManejoUsuarios.java
+D:\JAVAITLA\Tarea4Pro1\src\main\java\diseñografico\Registro.java
+D:\JAVAITLA\Tarea4Pro1\src\main\java\diseñografico\Login.java
+D:\JAVAITLA\Tarea4Pro1\src\main\java\diseñografico\UsuariosRegistrados.java
 D:\JAVAITLA\Tarea4Pro1\src\main\java\datos\Conexion.java
-D:\JAVAITLA\Tarea4Pro1\src\main\java\datos\IUsuarioDAO.java
-D:\JAVAITLA\Tarea4Pro1\src\main\java\test\TestMySqlJDBC.java
+D:\JAVAITLA\Tarea4Pro1\src\main\java\test\testDiseño.java
 D:\JAVAITLA\Tarea4Pro1\src\main\java\entidad\Usuario.java

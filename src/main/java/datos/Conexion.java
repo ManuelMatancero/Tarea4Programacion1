@@ -10,14 +10,19 @@ public class Conexion {
     private static final String CADENA_CONEXION = "jdbc:mysql://localhost:3306/tarea4?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private static final String USUARIO_MYSQL = "root";
     private static final String CONTRA_MYSQL = "admin";
+    private static Connection conexion;
+    
 
     /*Este metodo devuelve un objeto de tipo conexion en el cual se crea un objeto de tipo Connection al cual se le aplicara el metodo estatico
     getConnection de la clase DriveManager que recibe por parametro el url, usuario y contrasena de la base de datos a la cual nos conectaremos
-    esta operacion esta envuelta en un try-catch porque puede que arroje una exepcion*/
+    esta operacion esta envuelta en un try-catch porque puede que arroje una excepcion*/
     public static Connection obtenerConexion() {
-        Connection conexion = null;
+        //EN ESTE METODO UTILICE EL PATRON DE DISEÑO SINGLETON PARA SOLO CREAR UN OBJETO GLOBAL DE TIPO CONEXION EN LA CLASE UsuarioDAO
         try {
-            conexion = DriverManager.getConnection(CADENA_CONEXION, USUARIO_MYSQL, CONTRA_MYSQL);
+            if(conexion==null){
+                
+               conexion = DriverManager.getConnection(CADENA_CONEXION, USUARIO_MYSQL, CONTRA_MYSQL); 
+            }     
 
         } catch (SQLException e) {
 
@@ -57,12 +62,6 @@ public class Conexion {
         }
     }
 
-    public static void close(Connection conn) {
-        try {
-            conn.close();
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, "Ocurrio un ERROR");
-        }
-    }
+ 
 
 }

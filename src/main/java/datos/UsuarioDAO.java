@@ -17,14 +17,14 @@ public class UsuarioDAO {
     private static final String SQL_UPDATE = "UPDATE usuarios SET nombre_de_usuario= ?, nombre = ?, apellido= ?, numero_de_telefono= ?, correo= ?, contraseña= ? WHERE nombre_de_usuario= ?";
     public static final String SQL_ELIMINAR = "DELETE FROM usuarios WHERE nombre_de_usuario= ?";
     public static final String SQL_MOSTRARDATOS = "SELECT nombre_de_usuario, nombre, apellido, numero_de_telefono, correo FROM usuarios";
+    //Variable Conexion
+    public static Connection conexion;
 
 // Este es el metodo que me devuelve un objeto de tipo ArrayList con todos los registros de la base de datos
     public List<Usuario> seleccionar() {
 // declaro las variables 
         List<Usuario> usuarios = new ArrayList<>();
-        Usuario usuario = null;
-        // variable conexion
-        Connection conexion = null;
+        Usuario usuario = null;  
         // variable que ejecuta las sentencias en la base de datos
         Statement sentenciaSQL = null;
         // variable que me trae el resultado
@@ -59,7 +59,6 @@ public class UsuarioDAO {
         //Aqui se cierran las conexiones a la base de datos aplicando el metodo estatico Close de la clase Conexion
         Conexion.close(resultado);
         Conexion.close(sentenciaSQL);
-        Conexion.close(conexion);
         //me devuelve el ArrayList con todos los registros
         return usuarios;
 
@@ -67,8 +66,7 @@ public class UsuarioDAO {
 
     //Metodo insertar a traves de este metodo se insertan los datos en la base de datos
     public void insertar(Usuario usuario) {
-//De claro dos variables una conexion y otra preparedStatement
-        Connection conexion = null;
+//Declaro una variable de tipo preparedStatement
         PreparedStatement resultado = null;
 
         try {
@@ -94,15 +92,13 @@ public class UsuarioDAO {
 
         //se cierran las conexiones
         Conexion.close(resultado);
-        Conexion.close(conexion);
-
+  
     }
 
     //Metodo actualizar que actualiza un registro a partir del nombre de usuario 
     public void actualizar(Usuario usuario) {
 
         //como anteriormente se declaran estas variables
-        Connection conexion = null;
         PreparedStatement resultado = null;
 
         try {
@@ -127,14 +123,12 @@ public class UsuarioDAO {
 
         //Se cierra la conexion
         Conexion.close(resultado);
-        Conexion.close(conexion);
 
     }
 
     //Eliminar usuario, este metodo elimina el usuario a partir del nombre de usuario
     public void eliminar(Usuario usuario) {
 
-        Connection conexion = null;
         PreparedStatement resultado = null;
         try {
             conexion = Conexion.obtenerConexion();
@@ -152,7 +146,6 @@ public class UsuarioDAO {
 
         //Se cierran las conexiones
         Conexion.close(resultado);
-        Conexion.close(conexion);
 
     }
 //Este es el metodo que utilizo para guardar todos los registros de la base de ddatos en un objeto de tipo DefaultTableModel
@@ -167,8 +160,7 @@ public class UsuarioDAO {
         //le paso por parametro en las filas null y en las columnas el arreglo con los valores de las columnas
         DefaultTableModel tabla = new DefaultTableModel(null, nombreColumnas);
 
-        //declaro las variables para realizar la conexion a las abases de datos
-        Connection conexion = null;
+        //declaro las variables para realizar las manipulaciones a las abases de datos
         PreparedStatement resultado = null;
         ResultSet rs = null;
 
@@ -195,8 +187,7 @@ public class UsuarioDAO {
 
         //cierro las conexiones
         Conexion.close(resultado);
-        Conexion.close(conexion);
-// devuelvo el objeto tabla
+// devuelvo el objeto tabla de tipo DefaultTableModel
         return tabla;
 
     }

@@ -12,6 +12,8 @@ import java.awt.Toolkit;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+//Estudiante: Manuel Antonio Sarante Sanchez
+//Matricula: 2021-0785
 /**
  *
  * @author saran
@@ -40,9 +42,9 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
         int localizacionX = (dimensionPantalla.width - anchoVentana) / 2;
         int localizacionY = (dimensionPantalla.height - largoVentana) / 2;
         this.setLocation(localizacionX, localizacionY);
-       // La siguiente linea de codigo muestra los datos de los registros en la tabla al iniciar este JFrame
+        // La siguiente linea de codigo muestra los datos de los registros en la tabla al iniciar este JFrame
         jTable1.setModel(usuario.mostrarDatos());
-       //El codigo sigiente desabilita todos los botones y campos te texto del area de actualizar
+        //El codigo sigiente desabilita todos los botones y campos te texto del area de actualizar
         jTextField1.setEnabled(false);
         jTextField2.setEnabled(false);
         jTextField3.setEnabled(false);
@@ -349,8 +351,8 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
 
             if (jTable1.getSelectionModel().isSelectionEmpty()) {
                 JOptionPane.showMessageDialog(null, "Debe seleccionar una fila de la tabla para ELIMINAR");
-     // el GetValueAt toma el valor de la fila y la columna indicada
-     //el getSelectedRow toma la posicion de la fila seleccionada
+                // el GetValueAt toma el valor de la fila y la columna indicada
+                //el getSelectedRow toma la posicion de la fila seleccionada
             } else {
                 Usuario user;
                 int fila = jTable1.getSelectedRow();
@@ -373,7 +375,7 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         if (evt.getSource() == jButton1) {
-    //Si no se a seleccionado nada en la tabla me arroja este mensaje
+            //Si no se a seleccionado nada en la tabla me arroja este mensaje
             if (jTable1.getSelectionModel().isSelectionEmpty()) {
                 JOptionPane.showMessageDialog(null, "Debe seleccionar una fila de la tabla para Actualizar");
 //si hay algo seleccinado en la tabla creo un objeto de tipo usuario y almaceno la fila seleccionada en una variable
@@ -451,7 +453,7 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_jButton4ActionPerformed
-   //Metodo del boton cancelar del area de Actualizar
+    //Metodo del boton cancelar del area de Actualizar
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         //con este codigo todos los campos del area Actualizar se ponen en blenco y se desabilita el uso de los botones y los campos para evitar confusiones
@@ -475,6 +477,7 @@ public class UsuariosRegistrados extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * @param args the command line arguments
      */

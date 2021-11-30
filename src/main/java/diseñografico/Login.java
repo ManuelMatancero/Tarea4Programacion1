@@ -15,6 +15,8 @@ import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+//Estudiante: Manuel Antonio Sarante Sanchez
+//Matricula: 2021-0785
 /**
  *
  * @author saran
@@ -289,6 +291,7 @@ public class Login extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 /////////////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * @param args the command line arguments
      */

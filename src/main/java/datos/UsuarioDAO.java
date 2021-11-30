@@ -7,7 +7,9 @@ import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-//esta es la clase con la denominacion Data Acces Object que brinda acceso a los datos de la base de datos para manipularlos
+//Estudiante: Manuel Antonio Sarante Sanchez
+//Matricula: 2021-0785
+//Esta es la clase con la denominacion Data Acces Object que brinda acceso a los datos de la base de datos para manipularlos, EN ESTA CLASE UTILICE EL PATRON DAO DATA ACCESS OBJECT
 public class UsuarioDAO {
 
     //Estas son la variables privadas, estaticas y constantes que contienen las sentencias SQL que manipulan los datos de la base de datos en MySQL
@@ -24,7 +26,7 @@ public class UsuarioDAO {
     public List<Usuario> seleccionar() {
 // declaro las variables 
         List<Usuario> usuarios = new ArrayList<>();
-        Usuario usuario = null;  
+        Usuario usuario = null;
         // variable que ejecuta las sentencias en la base de datos
         Statement sentenciaSQL = null;
         // variable que me trae el resultado
@@ -92,7 +94,7 @@ public class UsuarioDAO {
 
         //se cierran las conexiones
         Conexion.close(resultado);
-  
+
     }
 
     //Metodo actualizar que actualiza un registro a partir del nombre de usuario 

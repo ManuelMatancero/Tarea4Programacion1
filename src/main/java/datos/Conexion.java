@@ -2,6 +2,9 @@ package datos;
 
 import java.sql.*;
 import javax.swing.JOptionPane;
+
+//Estudiante: Manuel Antonio Sarante Sanchez
+//Matricula: 2021-0785
 //Esta clase me permite la conexion a la base de datos de MySQL
 public class Conexion {
 
@@ -11,7 +14,7 @@ public class Conexion {
     private static final String USUARIO_MYSQL = "root";
     private static final String CONTRA_MYSQL = "admin";
     private static Connection conexion;
-    
+
 
     /*Este metodo devuelve un objeto de tipo conexion en el cual se crea un objeto de tipo Connection al cual se le aplicara el metodo estatico
     getConnection de la clase DriveManager que recibe por parametro el url, usuario y contrasena de la base de datos a la cual nos conectaremos
@@ -19,10 +22,10 @@ public class Conexion {
     public static Connection obtenerConexion() {
         //EN ESTE METODO UTILICE EL PATRON DE DISEÑO SINGLETON PARA SOLO CREAR UN OBJETO GLOBAL DE TIPO CONEXION EN LA CLASE UsuarioDAO
         try {
-            if(conexion==null){
-                
-               conexion = DriverManager.getConnection(CADENA_CONEXION, USUARIO_MYSQL, CONTRA_MYSQL); 
-            }     
+            if (conexion == null) {
+
+                conexion = DriverManager.getConnection(CADENA_CONEXION, USUARIO_MYSQL, CONTRA_MYSQL);
+            }
 
         } catch (SQLException e) {
 
@@ -61,7 +64,5 @@ public class Conexion {
             JOptionPane.showMessageDialog(null, "Ocurrio un ERROR");
         }
     }
-
- 
 
 }

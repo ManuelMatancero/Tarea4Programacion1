@@ -13,6 +13,8 @@ import java.awt.Toolkit;
 import java.util.List;
 import javax.swing.JOptionPane;
 
+//Estudiante: Manuel Antonio Sarante Sanchez
+//Matricula: 2021-0785
 /**
  *
  * @author saran
@@ -341,6 +343,7 @@ public class Registro extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     /**
      * @param args the command line arguments
      */

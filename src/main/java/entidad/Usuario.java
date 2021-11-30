@@ -1,6 +1,7 @@
 package entidad;
 
-
+//Estudiante: Manuel Antonio Sarante Sanchez
+//Matricula: 2021-0785
 //Esta es la clase que tiene la forma de la entidad o la tabla en la base de datos
 public class Usuario {
 
@@ -55,9 +56,8 @@ public class Usuario {
         this.correo = correo;
         this.contrasena = contrasena;
     }
-    
-    //Metodos Getter y Setter 
 
+    //Metodos Getter y Setter 
     public int getIdusuario() {
         return idusuario;
     }
